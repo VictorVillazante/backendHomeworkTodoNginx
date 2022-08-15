@@ -1,0 +1,10 @@
+GET http://localhost:8080/v1/api/todo
+###
+
+POST http://localhost:8080/v1/api/todo
+Content-Type: application/json
+
+{
+    "id":2,
+    "description":  "test"
+}
