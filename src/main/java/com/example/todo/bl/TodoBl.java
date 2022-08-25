@@ -39,14 +39,14 @@ public class TodoBl {
     @Transactional
     public TodoEntity saveTodo(TodoDto todoDto) {
         LOGGER.info("BUSINESS-LOGIC: Iniciando consulta para registrar un todo's");
-        TodoEntity todoEntity = new TodoEntity(todoDto.getId(), todoDto.getDescription(),
+        TodoEntity todoEntity = new TodoEntity(todoDto.getDescription(),
                 new Date(), null, 1);
         TodoEntity todo = this.todoRepository.saveAndFlush(todoEntity);
-        try {
+        /*try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
 //        throw new RuntimeException("ERROR");
         LOGGER.info("BUSINESS-LOGIC: La consulta para registrar un todo's retorno: {}", todo);
         return todo;

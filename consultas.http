@@ -5,6 +5,17 @@ POST http://localhost:8080/v1/api/todo
 Content-Type: application/json
 
 {
-    "id":2,
     "description":  "test"
+}
+
+###
+GET http://localhost:8080/v1/api/todo/3
+
+###
+PUT http://localhost:8080/v1/api/todo
+Content-Type: application/json
+
+{
+    "id":5,
+    "description":  "test5"
 }

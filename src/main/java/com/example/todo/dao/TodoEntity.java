@@ -1,20 +1,28 @@
 package com.example.todo.dao;
 
+import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 @Table(name = "todo")
 @Entity
 public class TodoEntity {
     @Id
+    @GeneratedValue
     @Column
     private Integer id;
     @Column
     private String description;
     @Column
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createdAt;
     @Column
     private Date updatedAt;
