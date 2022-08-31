@@ -6,11 +6,11 @@
     <springProperty scope="context" name="port" source="server.port" defaultValue="0000"/>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/home/victor/Escritorio/clase08112022/${application}/${application}-${port}.log</file>
+        <file>/home/bitius/Escritorio/TODO/BACKEND/backendHomeworkTodo1/${application}/${application}-${port}.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>/home/victor/Escritorio/clase08112022/${application}/${application}-${port}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>/home/bitius/Escritorio/TODO/BACKEND/backendHomeworkTodo1/${application}/${application}-${port}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 50MB -->

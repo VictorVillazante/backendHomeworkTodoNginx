@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200","http://localhost","http://172.17.0.1:8080"})
 @RestController
 @RequestMapping("/v1/api/todo")
 public class TodoController {

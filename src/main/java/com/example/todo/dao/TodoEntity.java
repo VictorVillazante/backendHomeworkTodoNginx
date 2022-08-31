@@ -21,8 +21,9 @@ public class TodoEntity {
     private Integer id;
     @Column
     private String description;
+    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Column
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(shape=JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy HH:mm:ss",timezone = "GMT-4:00")
     private Date createdAt;
     @Column
     private Date updatedAt;

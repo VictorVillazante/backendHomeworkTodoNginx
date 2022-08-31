@@ -25,7 +25,14 @@ services:
     depends_on:
       - mysql
     restart: on-failure:10
-    
+  frontend:
+    image: frontend:1.0.1
+    ports:
+      - 4200:4200
+    networks:
+      - arquitectura-software
+    environment:
+      - IP=todo
 
 networks:
   arquitectura-software:

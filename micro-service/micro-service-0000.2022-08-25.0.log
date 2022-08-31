@@ -1,0 +1,53 @@
+2022-08-25 12:31:16 [main] INFO  com.example.todo.TodoApplication - Starting TodoApplication using Java 11.0.16 on bitius-TECRA-Z40-C with PID 42072 (/home/bitius/Escritorio/TODO/BACKEND/backendHomeworkTodo1/target/classes started by bitius in /home/bitius/Escritorio/TODO/BACKEND/backendHomeworkTodo1)
+2022-08-25 12:31:16 [main] INFO  com.example.todo.TodoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-08-25 12:31:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-25 12:31:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2022-08-25 12:31:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-25 12:31:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-25 12:31:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-25 12:31:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-25 12:31:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2207 ms
+2022-08-25 12:31:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-25 12:31:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-25 12:31:18 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-25 12:31:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-25 12:31:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-25 12:31:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-25 12:31:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-25 12:31:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 12:31:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-25 12:31:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-25 12:31:21 [main] INFO  com.example.todo.TodoApplication - Started TodoApplication in 6.065 seconds (JVM running for 6.446)
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para obtener el listado de TODO's
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para obtener el listado de todo's
+2022-08-25 12:32:24 [http-nio-8080-exec-1] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para obtener el listado de todo's retorno: []
+2022-08-25 12:32:32 [http-nio-8080-exec-2] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:32:32 [http-nio-8080-exec-2] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:32:32 [http-nio-8080-exec-2] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=1, description='test', createdAt=Thu Aug 25 12:32:32 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:32:32 [http-nio-8080-exec-3] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:32:32 [http-nio-8080-exec-3] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:32:32 [http-nio-8080-exec-3] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=2, description='test', createdAt=Thu Aug 25 12:32:32 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:32:33 [http-nio-8080-exec-4] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:32:33 [http-nio-8080-exec-4] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:32:33 [http-nio-8080-exec-4] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=3, description='test', createdAt=Thu Aug 25 12:32:33 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:32:33 [http-nio-8080-exec-5] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:32:33 [http-nio-8080-exec-5] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:32:33 [http-nio-8080-exec-5] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=4, description='test', createdAt=Thu Aug 25 12:32:33 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:32:34 [http-nio-8080-exec-6] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:32:34 [http-nio-8080-exec-6] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:32:34 [http-nio-8080-exec-6] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=5, description='test', createdAt=Thu Aug 25 12:32:34 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:32:36 [http-nio-8080-exec-7] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para obtener el listado de TODO's
+2022-08-25 12:32:36 [http-nio-8080-exec-7] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para obtener el listado de todo's
+2022-08-25 12:32:36 [http-nio-8080-exec-7] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para obtener el listado de todo's retorno: [TodoEntity{id=1, description='test', createdAt=2022-08-25 12:32:32.0, updatedAt=null, status=1}, TodoEntity{id=2, description='test', createdAt=2022-08-25 12:32:32.0, updatedAt=null, status=1}, TodoEntity{id=3, description='test', createdAt=2022-08-25 12:32:33.0, updatedAt=null, status=1}, TodoEntity{id=4, description='test', createdAt=2022-08-25 12:32:33.0, updatedAt=null, status=1}, TodoEntity{id=5, description='test', createdAt=2022-08-25 12:32:34.0, updatedAt=null, status=1}]
+2022-08-25 12:37:06 [http-nio-8080-exec-8] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para obtener el listado de TODO's
+2022-08-25 12:37:06 [http-nio-8080-exec-8] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para obtener el listado de todo's
+2022-08-25 12:37:06 [http-nio-8080-exec-8] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para obtener el listado de todo's retorno: [TodoEntity{id=1, description='test', createdAt=2022-08-25 12:32:32.0, updatedAt=null, status=1}, TodoEntity{id=2, description='test', createdAt=2022-08-25 12:32:32.0, updatedAt=null, status=1}, TodoEntity{id=3, description='test', createdAt=2022-08-25 12:32:33.0, updatedAt=null, status=1}, TodoEntity{id=4, description='test', createdAt=2022-08-25 12:32:33.0, updatedAt=null, status=1}, TodoEntity{id=5, description='test', createdAt=2022-08-25 12:32:34.0, updatedAt=null, status=1}]
+2022-08-25 12:37:15 [http-nio-8080-exec-1] INFO  com.example.todo.api.TodoController - REQUEST: Iniciando petición para guardar un TODO
+2022-08-25 12:37:15 [http-nio-8080-exec-1] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: Iniciando consulta para registrar un todo's
+2022-08-25 12:37:15 [http-nio-8080-exec-1] INFO  com.example.todo.bl.TodoBl - BUSINESS-LOGIC: La consulta para registrar un todo's retorno: TodoEntity{id=6, description='test6', createdAt=Thu Aug 25 12:37:15 BOT 2022, updatedAt=null, status=1}
+2022-08-25 12:40:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-25 12:40:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-08-25 12:40:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
