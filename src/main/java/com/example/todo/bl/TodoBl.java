@@ -61,5 +61,11 @@ public class TodoBl {
         LOGGER.info("BUSINESS-LOGIC: La consulta para actualizar un todo retorno: {}", todo);
         return todo;
     }
+    public String deleteTodo(Integer id) {
+        LOGGER.info("BUSINESS-LOGIC: Iniciando consulta para eliminar un todo's");
+        TodoEntity todo = this.todoRepository.findById(id).orElseThrow();
+        this.todoRepository.delete(todo);
+        return "OK";
+    }
 
 }

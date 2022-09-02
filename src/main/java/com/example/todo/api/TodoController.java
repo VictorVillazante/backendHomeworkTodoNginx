@@ -52,4 +52,10 @@ public class TodoController {
         TodoEntity result = todoBl.updateTodo(todoDto);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
+    @RequestMapping(method = RequestMethod.DELETE,value = "/{id}")
+    public ResponseEntity<String> deleteTodo(@PathVariable Integer id) {
+        LOGGER.info("REQUEST: Iniciando petición para eliminar un TODO");
+        String result = todoBl.deleteTodo(id);
+        return new ResponseEntity<String>("OK", HttpStatus.OK);
+    }
 }
