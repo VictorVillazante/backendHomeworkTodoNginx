@@ -16,6 +16,8 @@ PUT http://localhost:8080/v1/api/todo
 Content-Type: application/json
 
 {
-    "id":5,
-    "description":  "test5"
+    "id":26,
+    "description":  "tes26"
 }
+###
+DELETE http://localhost:8080/v1/api/todo/20
