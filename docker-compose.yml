@@ -1,32 +1,38 @@
-version: "3.9"
+version: "3.0"
 services:
-  mysql:
-    image: mysql:latest
-    ports:
-      - 3306:3306
-    networks:
-      - arquitectura-software
-    volumes:
-      - ./sql/init.sql:/data/application/init.sql
-    command: --init-file /data/application/init.sql
-    environment:
-      - MYSQL_ROOT_PASSWORD=my-secret-pw
-  todo:
-    image: todo:1.0.3
-    ports:
-      - 8080:8080
-    networks:
-      - arquitectura-software
-    volumes:
-      - /home/victor/Escritorio/clase08112022:/opt/arqui_software/logs
-    environment:
-      - IP=mysql
-      - PASSWORD=my-secret-pw
-    depends_on:
-      - mysql
-    restart: on-failure:10
+  # mysql-todo-angular-spring:
+  #   image: mysql:latest
+  #   ports:
+  #     - 3306:3306
+  #   # networks:
+  #   #   - arquitectura-software
+  #   # volumes:
+  #   #   - ./sql/init.sql:/data/application/init.sql
+  #   # command: --init-file /data/application/init.sql
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=my-secret-pw
+  # mysql:
+  #   image: mysql-todo-angular-spring:0.0.1
+  #   ports:
+  #     - 3306:3306
+  #   networks:
+  #     - arquitectura-software
+  # todo:
+  #   image: backend-spring-todo:1.0.3
+  #   ports:
+  #     - 8080:8080
+  #   networks:
+  #     - arquitectura-software
+  #   volumes:
+  #     - /home/victor/Escritorio/clase08112022:/opt/arqui_software/logs
+  #   environment:
+  #     - IP=mysql
+  #     - PASSWORD=my-secret-pw
+  #   depends_on:
+  #     - mysql
+  #   restart: on-failure:10
   frontend:
-    image: frontend:1.0.1
+    image: frontend-angular-todo:1.0.1
     ports:
       - 4200:4200
     networks:
